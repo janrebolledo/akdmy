@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroller {
+  animation: scroller 20s linear infinite 0s normal;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+@keyframes scroller {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

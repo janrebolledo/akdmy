@@ -31,10 +31,10 @@ export default function Home() {
       <header className='fixed p-6 py-12 lg:px-24 z-20'>
         <Image src={logo} width={96} alt='AKDMY Logo' />
       </header>
-      <section className='h-[90lvh] relative w-full'>
+      <section className='h-[90svh] relative w-full'>
         <div className='absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-end md:justify-center items-center md:items-start p-6 py-12 lg:px-24 gap-4 z-10 text-white'>
           <motion.h1
-            className='text-balance text-7xl md:text-8xl font-display lg:w-1/2 text-center md:text-start -mb-4'
+            className='text-balance text-6xl md:text-8xl font-display lg:w-1/2 text-center md:text-start -mb-4'
             {...motionProps(0)}
           >
             TRANSFORMING THE FUTURE OF FOOTBALL.
@@ -57,7 +57,7 @@ export default function Home() {
           className='object-cover w-full h-full z-0 object-[80%_center] md:object-[60%_center]'
         />
       </section>
-      <section className='relative bg-gold min-h-[100lvh] md:min-h-0 md:max-h-[50lvh] overflow-hidden'>
+      <section className='relative bg-gold min-h-[110lvh] md:min-h-0 md:max-h-[50lvh] overflow-hidden'>
         <div className='absolute top-0 left-0 bottom-0 right-0 h-full flex items-center justify-center flex-col p-6 gap-6 z-10'>
           <motion.h2
             className='font-display text-8xl -mb-4 text-center text-balance pt-12'
@@ -131,7 +131,7 @@ function Modal({ modalVisibility, setModalVisibility }) {
         onClick={() => setModalVisibility(false)}
       />
       <div
-        className={`fixed top-1/2 left-6 right-6 -translate-y-1/2 flex items-center flex-col justify-center bg-white p-12 z-30 gap-5 ${
+        className={`fixed top-1/2 left-6 right-6 -translate-y-1/2 flex items-center flex-col justify-center bg-white p-10 md:p-12 z-30 gap-5 ${
           modalVisibility
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0'
